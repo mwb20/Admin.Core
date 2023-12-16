@@ -104,6 +104,11 @@ public class AppConfig
     /// 健康检查配置
     /// </summary>
     public HealthChecksConfig HealthChecks { get; set; } = new HealthChecksConfig();
+
+    /// <summary>
+    /// 指定跨域访问时预检等待时间，以秒为单位，默认30分钟
+    /// </summary>
+    public int PreflightMaxAge { get; set; }
 }
 
 /// <summary>
@@ -261,6 +266,11 @@ public class ValidateConfig
     /// 数据权限
     /// </summary>
     public bool DataPermission { get; set; } = true;
+
+    /// <summary>
+    /// 接口数据权限
+    /// </summary>
+    public bool ApiDataPermission { get; set; } = false;
 }
 
 /// <summary>
