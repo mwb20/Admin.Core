@@ -1,7 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Linq;
-using System.Collections.Generic;
+﻿using System.Text;
 
 namespace ZhonTai.ApiUI
 {
@@ -191,12 +188,6 @@ namespace ZhonTai.ApiUI
         public static void OAuth2RedirectUrl(this ApiUIOptions options, string url)
         {
             options.ConfigObject.OAuth2RedirectUrl = url;
-        }
-
-        [Obsolete("The validator is disabled by default. Use EnableValidator to enable it")]
-        public static void ValidatorUrl(this ApiUIOptions options, string url)
-        {
-            options.ConfigObject.ValidatorUrl = url;
         }
 
         /// <summary>

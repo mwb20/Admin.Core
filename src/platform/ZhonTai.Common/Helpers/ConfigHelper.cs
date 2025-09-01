@@ -1,6 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.IO;
 
 namespace ZhonTai.Common.Helpers;
 
@@ -36,11 +34,11 @@ public class ConfigHelper
 
         var builder = new ConfigurationBuilder()
             .SetBasePath(filePath)
-            .AddJsonFile(fileName.ToLower() + ".json", optional, reloadOnChange);
+            .AddJsonFile(fileName + ".json", optional, reloadOnChange);
 
         if (environmentName.NotNull())
         {
-            builder.AddJsonFile(fileName.ToLower() + "." + environmentName + ".json", optional: optional, reloadOnChange: reloadOnChange);
+            builder.AddJsonFile(fileName + "." + environmentName + ".json", optional: optional, reloadOnChange: reloadOnChange);
         }
 
         return builder.Build();

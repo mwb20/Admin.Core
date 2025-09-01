@@ -399,4 +399,13 @@ FodyWeavers.xsd
 
 **/wwwroot/upload
 !**/ZhonTai.Admin/Core/Logs
+!**/views/admin/logs
 /ZhonTai.sln.EasyRun.json
+!**/zhontai.ui.admin.vue3/bin
+
+**/ZhonTai.Admin/ZhonTai.Admin.xml
+**/ZhonTai.Admin.Core/ZhonTai.Admin.Core.xml
+**/ZhonTai.Admin.Contracts/ZhonTai.Admin.Contracts.xml
+**/ZhonTai.ApiUI/ZhonTai.ApiUI.xml
+**/ZhonTai.Common/ZhonTai.Common.xml
+**/ZhonTai.DynamicApi/ZhonTai.DynamicApi.xml
